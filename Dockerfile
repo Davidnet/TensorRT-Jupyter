@@ -17,7 +17,7 @@ ENV CUDNN_INSTALL_DIR=/usr/local/cuda
 ENV CUDNN_INSTALL_DIR=/usr/local/cuda
 COPY ["init.sh", "setup.py",  "./"]
 RUN /bin/bash -c "/opt/init.sh"
-WORKDIR /data
+WORKDIR /opt/
 EXPOSE 8888
 #CMD ["bash"]
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
