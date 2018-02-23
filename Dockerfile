@@ -15,8 +15,8 @@ RUN tar -xzvf TensorRT-3.0.4.Ubuntu-16.04.3.x86_64.cuda-9.0.cudnn7.0.tar.gz
 ENV LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/TensorRT-3.0.4/lib" 
 ENV CUDNN_INSTALL_DIR=/usr/local/cuda
 ENV CUDNN_INSTALL_DIR=/usr/local/cuda
-COPY ["init.sh", "setup.py",  "./"]
-RUN /bin/bash -c "/opt/init.sh"
+COPY [ "installation.sh", "setup.py",  "./"]
+RUN /bin/bash -c "/opt/installation.sh"
 WORKDIR /opt/
 EXPOSE 8888
 CMD ["bash"]
