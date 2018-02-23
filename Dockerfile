@@ -19,5 +19,5 @@ COPY ["init.sh", "setup.py",  "./"]
 RUN /bin/bash -c "/opt/init.sh"
 WORKDIR /opt/
 EXPOSE 8888
-#CMD ["bash"]
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["bash"]
+#CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
