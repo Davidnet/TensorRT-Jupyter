@@ -1,3 +1,4 @@
+notebooks/mnist-estimator/
 *.tar.gz
 Anaconda*
 # Byte-compiled / optimized / DLL files

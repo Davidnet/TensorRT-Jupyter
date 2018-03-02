@@ -5,6 +5,8 @@ RUN apt-get update \
     curl \
     wget \
     vim  \
+    git  \
+    tmux \
     && rm -rf /var/lib/apt/lists/*
 COPY Anaconda3-5.0.1-Linux-x86_64.sh Anaconda3.sh
 RUN bash Anaconda3.sh -b -p /opt/anaconda3
